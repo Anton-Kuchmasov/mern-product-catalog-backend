@@ -13,7 +13,7 @@ const app = express();
 const { json } = pkg;
 
 app.use(json());
-app.use('/images', staticServer(join('/images')));
+app.use('/images', staticServer(join('./images')));
 
 app.use((req, res, next) => {
 

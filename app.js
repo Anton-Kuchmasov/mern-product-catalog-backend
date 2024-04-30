@@ -7,7 +7,7 @@ import productRoutes from './routes/products.js';
 import authRoutes from './routes/auth.js';
 import { initDb } from './db.js';
 
-const PORT = process.env.BE_PORT || 3101;
+const PORT = process.env.PORT || 3101;
 
 const app = express();
 const { json } = pkg;
